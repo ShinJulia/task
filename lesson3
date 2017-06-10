@@ -1,0 +1,20 @@
+Задача "Часы-3"
+
+a = float(input()) 
+h = a // 30 
+m = (a - h*30) * 2 
+s = (a - h*30 - m//1 * 0.5)*120
+print(int(h), int(m), int(s))
+
+Задача "Проценты"
+
+p = int(input()) 
+x = int(input()) 
+y = int(input()) 
+x = x * (p + 100) / 100 
+y = int(y * (p + 100) / 100) 
+if(x * 100 % 100 > 0):
+    y = y + int(x * 100 % 100) 
+if y >= 100:
+    x = x + y // 100
+    y = y % 100 print(int(x), y)
