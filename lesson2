@@ -1,0 +1,25 @@
+Задача "Шоколадка"
+
+n = int(input()) 
+m = int(input()) 
+k = int(input()) 
+if n * m <= k:
+   print("NO") 
+elif k % n == 0 or k % m == 0:
+   print("YES") 
+else:
+   print("NO")
+
+Задача "Яша плавает в бассейне"
+
+N = int(input()) 
+M = int(input()) 
+x = int(input()) 
+y = int(input()) 
+if (N > M):
+    m1 = min(x, M - x)
+    m2 = min(y, N - y) 
+else:
+    m1 = min(x, N - x)
+    m2 = min(y, M - y) 
+print(min(m1, m2))
